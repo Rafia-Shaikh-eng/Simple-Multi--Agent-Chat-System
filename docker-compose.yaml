@@ -1,0 +1,7 @@
+
+services:
+  multi-agent-chat:
+    build: .
+    command: python tests/run_scenarios.py
+    volumes:
+      - ./outputs:/app/outputs
