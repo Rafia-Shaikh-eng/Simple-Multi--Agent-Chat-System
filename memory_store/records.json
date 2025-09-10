@@ -1,0 +1,199 @@
+{
+  "knowledge:000001": {
+    "id": "knowledge:000001",
+    "kind": "knowledge",
+    "topic": "What are the main types of neural networks?",
+    "content": "- Feedforward neural networks (FNN) are the simplest architecture.\n- Convolutional neural networks (CNN) specialize in grid-like data such as images; efficient feature sharing via kernels.\n- Recurrent neural networks (RNN) model sequences with feedback connections.\n- Transformers rely on self-attention, enabling parallelism and state-of-the-art results in NLP and vision.\n- Graph neural networks (GNN) operate on graph-structured data.\n- Transformer architectures use self-attention to capture long-range dependencies efficiently.\n- Multi-head attention allows the model to focus on different representation subspaces.\n- Transformers are highly parallelizable, improving training throughput on GPUs/TPUs.\n- Computational cost rises quadratically with sequence length in vanilla self-attention.\n- Variants like Longformer, Performer, and Linformer reduce attention complexity with approximations.\n- Recent RL papers explore model-based RL for sample efficiency.\n- Common challenges include exploration-exploitation trade-off, reward sparsity, and stability.\n- Policy gradient methods optimize expected returns but can have high variance.\n- Value-based methods like DQN approximate Q-values and are data-efficient in discrete spaces.\n- Benchmarking differences and environment stochasticity hinder reproducibility.\n- Gradient Descent iteratively updates parameters along negative gradients; simple and widely used.\n- Adam combines momentum and adaptive learning rates; often converges faster and is robust.\n- RMSProp adapts learning rates based on a moving average of squared gradients.\n- Adagrad adapts learning rates per-parameter; can diminish over time.\n- Second-order methods like L-BFGS can converge quickly on small to medium problems but are memory-intensive.\n- Transformers scale well with data and compute but can be memory-hungry for long sequences.\n- Efficient attention variants trade exactness for scalability, introducing approximation error.\n- CNNs are efficient for local patterns; RNNs struggle with long-range dependencies compared to Transformers.",
+    "source": "mock_kb",
+    "agent": "research",
+    "confidence": 0.65,
+    "metadata": {
+      "facts_count": 23
+    }
+  },
+  "conversation:000002": {
+    "id": "conversation:000002",
+    "kind": "conversation",
+    "topic": "What are the main types of neural networks?",
+    "content": "- Feedforward neural networks (FNN) are the simplest architecture.\n- Convolutional neural networks (CNN) specialize in grid-like data such as images; efficient feature sharing via kernels.\n- Recurrent neural networks (RNN) model sequences with feedback connections.\n- Transformers rely on self-attention, enabling parallelism and state-of-the-art results in NLP and vision.\n- Graph neural networks (GNN) operate on graph-structured data.\n- Transformer architectures use self-attention to capture long-range dependencies efficiently.\n- Multi-head attention allows the model to focus on different representation subspaces.\n- Transformers are highly parallelizable, improving training throughput on GPUs/TPUs.\n- Computational cost rises quadratically with sequence length in vanilla self-attention.\n- Variants like Longformer, Performer, and Linformer reduce attention complexity with approximations.\n- Recent RL papers explore model-based RL for sample efficiency.\n- Common challenges include exploration-exploitation trade-off, reward sparsity, and stability.\n- Policy gradient methods optimize expected returns but can have high variance.\n- Value-based methods like DQN approximate Q-values and are data-efficient in discrete spaces.\n- Benchmarking differences and environment stochasticity hinder reproducibility.\n- Gradient Descent iteratively updates parameters along negative gradients; simple and widely used.\n- Adam combines momentum and adaptive learning rates; often converges faster and is robust.\n- RMSProp adapts learning rates based on a moving average of squared gradients.\n- Adagrad adapts learning rates per-parameter; can diminish over time.\n- Second-order methods like L-BFGS can converge quickly on small to medium problems but are memory-intensive.\n- Transformers scale well with data and compute but can be memory-hungry for long sequences.\n- Efficient attention variants trade exactness for scalability, introducing approximation error.\n- CNNs are efficient for local patterns; RNNs struggle with long-range dependencies compared to Transformers.",
+    "source": "conversation",
+    "agent": "coordinator",
+    "confidence": 0.8,
+    "metadata": {
+      "plan": [
+        [
+          "research",
+          "What are the main types of neural networks?"
+        ]
+      ]
+    }
+  },
+  "knowledge:000003": {
+    "id": "knowledge:000003",
+    "kind": "knowledge",
+    "topic": "Research transformer architectures, analyze their computational efficiency, and summarize key trade-offs.",
+    "content": "- Feedforward neural networks (FNN) are the simplest architecture.\n- Convolutional neural networks (CNN) specialize in grid-like data such as images; efficient feature sharing via kernels.\n- Recurrent neural networks (RNN) model sequences with feedback connections.\n- Transformers rely on self-attention, enabling parallelism and state-of-the-art results in NLP and vision.\n- Graph neural networks (GNN) operate on graph-structured data.\n- Transformer architectures use self-attention to capture long-range dependencies efficiently.\n- Multi-head attention allows the model to focus on different representation subspaces.\n- Transformers are highly parallelizable, improving training throughput on GPUs/TPUs.\n- Computational cost rises quadratically with sequence length in vanilla self-attention.\n- Variants like Longformer, Performer, and Linformer reduce attention complexity with approximations.\n- Recent RL papers explore model-based RL for sample efficiency.\n- Common challenges include exploration-exploitation trade-off, reward sparsity, and stability.\n- Policy gradient methods optimize expected returns but can have high variance.\n- Value-based methods like DQN approximate Q-values and are data-efficient in discrete spaces.\n- Benchmarking differences and environment stochasticity hinder reproducibility.\n- Gradient Descent iteratively updates parameters along negative gradients; simple and widely used.\n- Adam combines momentum and adaptive learning rates; often converges faster and is robust.\n- RMSProp adapts learning rates based on a moving average of squared gradients.\n- Adagrad adapts learning rates per-parameter; can diminish over time.\n- Second-order methods like L-BFGS can converge quickly on small to medium problems but are memory-intensive.\n- Transformers scale well with data and compute but can be memory-hungry for long sequences.\n- Efficient attention variants trade exactness for scalability, introducing approximation error.\n- CNNs are efficient for local patterns; RNNs struggle with long-range dependencies compared to Transformers.",
+    "source": "mock_kb",
+    "agent": "research",
+    "confidence": 0.65,
+    "metadata": {
+      "facts_count": 23
+    }
+  },
+  "agent_state:000004": {
+    "id": "agent_state:000004",
+    "kind": "agent_state",
+    "topic": "analysis_result",
+    "content": "Top findings:\n1. Adam combines momentum and adaptive learning rates; often converges faster and is robust. (score=5.65)\n2. Second-order methods like L-BFGS can converge quickly on small to medium problems but are memory-intensive. (score=4.75)\n3. Transformers rely on self-attention, enabling parallelism and state-of-the-art results in NLP and vision. (score=4.65)\n4. Convolutional neural networks (CNN) specialize in grid-like data such as images; efficient feature sharing via kernels. (score=3.80)\n5. Transformers scale well with data and compute but can be memory-hungry for long sequences. (score=3.70)\n\nRecommendation: Adam combines momentum and adaptive learning rates; often converges faster and is robust.",
+    "source": "analysis",
+    "agent": "analysis",
+    "confidence": 0.8999999999999999,
+    "metadata": {
+      "based_on": "analyze findings"
+    }
+  },
+  "conversation:000005": {
+    "id": "conversation:000005",
+    "kind": "conversation",
+    "topic": "Research transformer architectures, analyze their computational efficiency, and summarize key trade-offs.",
+    "content": "Top findings:\n1. Adam combines momentum and adaptive learning rates; often converges faster and is robust. (score=5.65)\n2. Second-order methods like L-BFGS can converge quickly on small to medium problems but are memory-intensive. (score=4.75)\n3. Transformers rely on self-attention, enabling parallelism and state-of-the-art results in NLP and vision. (score=4.65)\n4. Convolutional neural networks (CNN) specialize in grid-like data such as images; efficient feature sharing via kernels. (score=3.80)\n5. Transformers scale well with data and compute but can be memory-hungry for long sequences. (score=3.70)\n\nRecommendation: Adam combines momentum and adaptive learning rates; often converges faster and is robust.",
+    "source": "conversation",
+    "agent": "coordinator",
+    "confidence": 0.8,
+    "metadata": {
+      "plan": [
+        [
+          "memory",
+          "Research transformer architectures, analyze their computational efficiency, and summarize key trade-offs."
+        ],
+        [
+          "research",
+          "Research transformer architectures, analyze their computational efficiency, and summarize key trade-offs."
+        ],
+        [
+          "analysis",
+          "analyze findings"
+        ]
+      ]
+    }
+  },
+  "conversation:000006": {
+    "id": "conversation:000006",
+    "kind": "conversation",
+    "topic": "What did we discuss about neural networks earlier?",
+    "content": "[knowledge] What are the main types of neural networks? :: - Feedforward neural networks (FNN) are the simplest architecture.\n- Convolutional neural networks (CNN) specialize in g... (by research, conf=0.65)\n[conversation] What are the main types of neural networks? :: - Feedforward neural networks (FNN) are the simplest architecture.\n- Convolutional neural networks (CNN) specialize in g... (by coordinator, conf=0.80)\n[knowledge] Research transformer architectures, analyze their computational efficiency, and summarize key trade-offs. :: - Feedforward neural networks (FNN) are the simplest architecture.\n- Convolutional neural networks (CNN) specialize in g... (by research, conf=0.65)\n[agent_state] analysis_result :: Top findings:\n1. Adam combines momentum and adaptive learning rates; often converges faster and is robust. (score=5.65)... (by analysis, conf=0.90)\n[conversation] Research transformer architectures, analyze their computational efficiency, and summarize key trade-offs. :: Top findings:\n1. Adam combines momentum and adaptive learning rates; often converges faster and is robust. (score=5.65)... (by coordinator, conf=0.80)",
+    "source": "conversation",
+    "agent": "coordinator",
+    "confidence": 0.8,
+    "metadata": {
+      "plan": [
+        [
+          "memory",
+          "What did we discuss about neural networks earlier?"
+        ],
+        [
+          "memory",
+          "What did we discuss about neural networks earlier?"
+        ]
+      ]
+    }
+  },
+  "knowledge:000007": {
+    "id": "knowledge:000007",
+    "kind": "knowledge",
+    "topic": "Find recent papers on reinforcement learning, analyze their methodologies, and identify common challenges.",
+    "content": "- Feedforward neural networks (FNN) are the simplest architecture.\n- Convolutional neural networks (CNN) specialize in grid-like data such as images; efficient feature sharing via kernels.\n- Recurrent neural networks (RNN) model sequences with feedback connections.\n- Transformers rely on self-attention, enabling parallelism and state-of-the-art results in NLP and vision.\n- Graph neural networks (GNN) operate on graph-structured data.\n- Transformer architectures use self-attention to capture long-range dependencies efficiently.\n- Multi-head attention allows the model to focus on different representation subspaces.\n- Transformers are highly parallelizable, improving training throughput on GPUs/TPUs.\n- Computational cost rises quadratically with sequence length in vanilla self-attention.\n- Variants like Longformer, Performer, and Linformer reduce attention complexity with approximations.\n- Recent RL papers explore model-based RL for sample efficiency.\n- Common challenges include exploration-exploitation trade-off, reward sparsity, and stability.\n- Policy gradient methods optimize expected returns but can have high variance.\n- Value-based methods like DQN approximate Q-values and are data-efficient in discrete spaces.\n- Benchmarking differences and environment stochasticity hinder reproducibility.\n- Gradient Descent iteratively updates parameters along negative gradients; simple and widely used.\n- Adam combines momentum and adaptive learning rates; often converges faster and is robust.\n- RMSProp adapts learning rates based on a moving average of squared gradients.\n- Adagrad adapts learning rates per-parameter; can diminish over time.\n- Second-order methods like L-BFGS can converge quickly on small to medium problems but are memory-intensive.\n- Transformers scale well with data and compute but can be memory-hungry for long sequences.\n- Efficient attention variants trade exactness for scalability, introducing approximation error.\n- CNNs are efficient for local patterns; RNNs struggle with long-range dependencies compared to Transformers.",
+    "source": "mock_kb",
+    "agent": "research",
+    "confidence": 0.65,
+    "metadata": {
+      "facts_count": 23
+    }
+  },
+  "agent_state:000008": {
+    "id": "agent_state:000008",
+    "kind": "agent_state",
+    "topic": "analysis_result",
+    "content": "Top findings:\n1. Adam combines momentum and adaptive learning rates; often converges faster and is robust. (score=5.65)\n2. Second-order methods like L-BFGS can converge quickly on small to medium problems but are memory-intensive. (score=4.75)\n3. Transformers rely on self-attention, enabling parallelism and state-of-the-art results in NLP and vision. (score=4.65)\n4. Convolutional neural networks (CNN) specialize in grid-like data such as images; efficient feature sharing via kernels. (score=3.80)\n5. Transformers scale well with data and compute but can be memory-hungry for long sequences. (score=3.70)\n\nRecommendation: Adam combines momentum and adaptive learning rates; often converges faster and is robust.",
+    "source": "analysis",
+    "agent": "analysis",
+    "confidence": 0.8999999999999999,
+    "metadata": {
+      "based_on": "analyze findings"
+    }
+  },
+  "conversation:000009": {
+    "id": "conversation:000009",
+    "kind": "conversation",
+    "topic": "Find recent papers on reinforcement learning, analyze their methodologies, and identify common challenges.",
+    "content": "Top findings:\n1. Adam combines momentum and adaptive learning rates; often converges faster and is robust. (score=5.65)\n2. Second-order methods like L-BFGS can converge quickly on small to medium problems but are memory-intensive. (score=4.75)\n3. Transformers rely on self-attention, enabling parallelism and state-of-the-art results in NLP and vision. (score=4.65)\n4. Convolutional neural networks (CNN) specialize in grid-like data such as images; efficient feature sharing via kernels. (score=3.80)\n5. Transformers scale well with data and compute but can be memory-hungry for long sequences. (score=3.70)\n\nRecommendation: Adam combines momentum and adaptive learning rates; often converges faster and is robust.",
+    "source": "conversation",
+    "agent": "coordinator",
+    "confidence": 0.8,
+    "metadata": {
+      "plan": [
+        [
+          "memory",
+          "Find recent papers on reinforcement learning, analyze their methodologies, and identify common challenges."
+        ],
+        [
+          "research",
+          "Find recent papers on reinforcement learning, analyze their methodologies, and identify common challenges."
+        ],
+        [
+          "analysis",
+          "analyze findings"
+        ]
+      ]
+    }
+  },
+  "knowledge:000010": {
+    "id": "knowledge:000010",
+    "kind": "knowledge",
+    "topic": "Compare two machine-learning approaches and recommend which is better for our use case.",
+    "content": "- Feedforward neural networks (FNN) are the simplest architecture.\n- Convolutional neural networks (CNN) specialize in grid-like data such as images; efficient feature sharing via kernels.\n- Recurrent neural networks (RNN) model sequences with feedback connections.\n- Transformers rely on self-attention, enabling parallelism and state-of-the-art results in NLP and vision.\n- Graph neural networks (GNN) operate on graph-structured data.\n- Transformer architectures use self-attention to capture long-range dependencies efficiently.\n- Multi-head attention allows the model to focus on different representation subspaces.\n- Transformers are highly parallelizable, improving training throughput on GPUs/TPUs.\n- Computational cost rises quadratically with sequence length in vanilla self-attention.\n- Variants like Longformer, Performer, and Linformer reduce attention complexity with approximations.\n- Recent RL papers explore model-based RL for sample efficiency.\n- Common challenges include exploration-exploitation trade-off, reward sparsity, and stability.\n- Policy gradient methods optimize expected returns but can have high variance.\n- Value-based methods like DQN approximate Q-values and are data-efficient in discrete spaces.\n- Benchmarking differences and environment stochasticity hinder reproducibility.\n- Gradient Descent iteratively updates parameters along negative gradients; simple and widely used.\n- Adam combines momentum and adaptive learning rates; often converges faster and is robust.\n- RMSProp adapts learning rates based on a moving average of squared gradients.\n- Adagrad adapts learning rates per-parameter; can diminish over time.\n- Second-order methods like L-BFGS can converge quickly on small to medium problems but are memory-intensive.\n- Transformers scale well with data and compute but can be memory-hungry for long sequences.\n- Efficient attention variants trade exactness for scalability, introducing approximation error.\n- CNNs are efficient for local patterns; RNNs struggle with long-range dependencies compared to Transformers.",
+    "source": "mock_kb",
+    "agent": "research",
+    "confidence": 0.65,
+    "metadata": {
+      "facts_count": 23
+    }
+  },
+  "agent_state:000011": {
+    "id": "agent_state:000011",
+    "kind": "agent_state",
+    "topic": "analysis_result",
+    "content": "Top findings:\n1. Adam combines momentum and adaptive learning rates; often converges faster and is robust. (score=5.65)\n2. Second-order methods like L-BFGS can converge quickly on small to medium problems but are memory-intensive. (score=4.75)\n3. Transformers rely on self-attention, enabling parallelism and state-of-the-art results in NLP and vision. (score=4.65)\n4. Convolutional neural networks (CNN) specialize in grid-like data such as images; efficient feature sharing via kernels. (score=3.80)\n5. Transformers scale well with data and compute but can be memory-hungry for long sequences. (score=3.70)\n\nRecommendation: Adam combines momentum and adaptive learning rates; often converges faster and is robust.",
+    "source": "analysis",
+    "agent": "analysis",
+    "confidence": 0.8999999999999999,
+    "metadata": {
+      "based_on": "analyze findings"
+    }
+  },
+  "conversation:000012": {
+    "id": "conversation:000012",
+    "kind": "conversation",
+    "topic": "Compare two machine-learning approaches and recommend which is better for our use case.",
+    "content": "Top findings:\n1. Adam combines momentum and adaptive learning rates; often converges faster and is robust. (score=5.65)\n2. Second-order methods like L-BFGS can converge quickly on small to medium problems but are memory-intensive. (score=4.75)\n3. Transformers rely on self-attention, enabling parallelism and state-of-the-art results in NLP and vision. (score=4.65)\n4. Convolutional neural networks (CNN) specialize in grid-like data such as images; efficient feature sharing via kernels. (score=3.80)\n5. Transformers scale well with data and compute but can be memory-hungry for long sequences. (score=3.70)\n\nRecommendation: Adam combines momentum and adaptive learning rates; often converges faster and is robust.",
+    "source": "conversation",
+    "agent": "coordinator",
+    "confidence": 0.8,
+    "metadata": {
+      "plan": [
+        [
+          "memory",
+          "Compare two machine-learning approaches and recommend which is better for our use case."
+        ],
+        [
+          "research",
+          "Compare two machine-learning approaches and recommend which is better for our use case."
+        ],
+        [
+          "analysis",
+          "analyze findings"
+        ]
+      ]
+    }
+  }
+}
